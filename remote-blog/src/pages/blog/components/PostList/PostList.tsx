@@ -3,6 +3,8 @@ import PostItem from '../PostItem'
 import { RootState } from 'store'
 import { deletePost, startEditingPost } from 'pages/blog/blog.slice'
 
+// Gọi API trong useEffect()
+
 export default function PostList() {
   const postList = useSelector((state: RootState) => state.blog.postList)
   const dispatch = useDispatch()
